@@ -2,7 +2,7 @@ import argparse
 from bitarray import bitarray
 import sys
 
-def decompress_yay0(in_bytes, byte_order):
+def decompress_yay0(in_bytes, byte_order="big"):
     if in_bytes[:4] != b"Yay0":
         sys.exit("Input file is not yay0")
 
